@@ -8,10 +8,17 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@tensorflow-models/coco-ssd": "^2.2.2",
+    "@tensorflow-models/posenet": "^2.2.2",
+    "@tensorflow/tfjs": "^3.18.0",
+    "@tensorflow/tfjs-backend-cpu": "^3.18.0",
+    "@tensorflow/tfjs-backend-webgl": "^3.18.0",
+    "@tensorflow/tfjs-core": "^3.18.0",
     "cirrus-ui": "^0.7.0-patch.1",
     "core-js": "^3.8.3",
     "hls.js": "^1.1.5",
     "lodash": "^4.17.21",
+    "shaka-player": "^4.0.1",
     "socket.io-client": "^4.5.1",
     "vue": "^3.2.13",
     "vue-plyr": "^7.0.0"
