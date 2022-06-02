@@ -67,14 +67,14 @@ export default defineComponent({
         // liveMaxLatencyDurationCount: 4
       });
       hls.attachMedia((<any>(<any>this.$refs.plyr).player.media));
-      hls.on(Hls.Events.MEDIA_ATTACHED, function () {
-        hls.loadSource("https://cam.dflyboy.me/hls/raspberrypi-zero.m3u8");
-        hls.on(Hls.Events.MANIFEST_LOADED, function (ev, data) {
-          console.log("manifest loaded, found " + data.url + " quality level"); // hls.
-          (<HTMLVideoElement>hls.media).play();
-        });
-      });
-    },
+      hls.loadSource('https://cam.dflyboy.me/hls/raspberrypi-zero.m3u8');
+      // hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+      //   // hls.on(Hls.Events.MANIFEST_LOADED, function (ev, data) {
+      //   //   console.log("manifest loaded, found " + data.url + " quality level"); // hls.
+      //   //   (<HTMLVideoElement>hls.media).play();
+      //   // });
+      // });
+  },
   },
 });
 </script>
